@@ -97,6 +97,7 @@ class InputViewController: UIViewController {
                 
                 self.realm.add(self.task, update: true)
             }
+            setNotification(task: task)
         }
         return true
     }
